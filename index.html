@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Zipotes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #e0f7fa;
+      padding: 60px 20px;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .producto {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+    }
+
+    .producto img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .acapite {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .producto {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>Los Zipotes</strong></div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#sobre">Sobre Nosotros</a>
+      <a href="#contacto">Contáctanos</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <h1>Encuentra tu estilo con Los Zipotes</h1>
+    <p>Ropa juvenil y moderna para todos</p>
+    <button>Compra ahora</button>
+  </section>
+
+  <section id="productos" class="acapite">
+    <h2>Productos</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="https://i.postimg.cc/W403CjN8/picl-x6fd-210929.jpg" alt="Camiseta 1">
+        <p>Camiseta Estilo 1</p>
+        <button>Ver más</button>
+      </div>
+      <div class="producto">
+        <img src="https://i.postimg.cc/bJNhgjss/sa29-1fut-210712.jpg" alt="Camiseta 2">
+        <p>Camiseta Estilo 2</p>
+        <button>Ver más</button>
+      </div>
+      <div class="producto">
+        <img src="https://i.postimg.cc/G2pWYJ5D/t6d7-4lre-210929.jpg" alt="Camiseta 3">
+        <p>Camiseta Estilo 3</p>
+        <button>Ver más</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="acapite">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una tienda joven, creada con pasión por el diseño y la moda. Nuestro objetivo es ofrecer ropa accesible, de calidad y con mucho estilo para jóvenes emprendedores como tú.</p>
+  </section>
+
+  <section id="contacto" class="acapite">
+    <h2>Contáctanos</h2>
+    <p>Puedes escribirnos al correo: contacto@loszipotes.com</p>
+    <p>O seguirnos en nuestras redes sociales: Facebook, Instagram y TikTok.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Los Zipotes. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
